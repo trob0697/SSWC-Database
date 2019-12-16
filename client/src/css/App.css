@@ -1,0 +1,17 @@
+.background{
+  background-image: url('http://getwallpapers.com/wallpaper/full/5/3/d/783520-best-hipster-flower-backgrounds-1920x1080-photo.jpg');
+  min-height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.flowers tr:hover { 
+  background-color: #A769A1 !important;
+}
+
+.invalid{
+  border:1px solid #ff0000 !important;
+  }

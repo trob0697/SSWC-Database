@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run-script start",
+    "build": "cd client && npm run-script build",
+    "test": "cd client && npm run-script test",
+    "eject": "cd client && npm run-script eject",
+    "install-all": "concurrently \"npm install\" \"cd client && npm install\"",
+    "start": "nodemon server/server.js",
+    "prod": "concurrently \"npm run-script build\" \"npm run-script start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.18.10",
+    "sqlite3": "^4.1.1"
+  }
+}
