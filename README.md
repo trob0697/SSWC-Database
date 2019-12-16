@@ -1,49 +1,42 @@
-# Assignment 5
+# SSWC Database
 
 Web application that manages a databse.
 
 Deploy with the following commands:
 - npm install
-- npm run-script install-all
-- npm run-script prod
+- npm run-script install
+- npm run-script dev
 
-Deployed on: [http://localhost:5000](http://localhost:5000)
-
-
-## File structure
-#### `client` - Holds the client application
-- #### `public` - This holds all of our static files
-- #### `src` - This holds the client side source files
-- #### `package.json` - Defines npm behaviors and packages for the client
-#### `server` - Holds the server application
-
-- #### `server.js` - Defines npm behaviors and packages for the client
-#### `package.json` - Defines npm behaviors 
-#### `.gitignore` - Tells git which files to ignore
-#### `README` - This file!
-
+Deployed on: [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
-
 In the project directory, you can run:
 
-### `npm run-script prod`
+#### `npm run-script dev`
+Runs both the client and server together in development mode.
+Open [http://localhost:3000](http://localhost:3000) to view in the browser.
 
-Runs both the client app and the server app together.<br>
+#### `npm run-script server`
+Runs tjust the server in development mode.
+Access the server on port 5000.
+
+#### `npm run-script install`
+Installs all dependencies client side.
+
+#### `npm run-script client`
+Runs just the client app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
 
-### `npm run-script client`
-
-Runs just the client app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view the client in the browser.
-
-### `npm run-script build`
-
-Builds the app for production to the `build` folder.<br>
+#### `npm run-script build`
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-If deploying to heroku this does not need to be run since it is handled by the heroku-postbuild script<br>
+#### `npm run-script test`
+Jest will launch in watch mode mode.
+Jest will look for files test files with any of the following naming conventions:
+* Files with .js suffix in __tests__ folders.
+* Files with .test.js suffix.
+* Files with .spec.js suffix.
 
-### `npm run-script server`
-
-Runs just the server in development mode.<br>
+#### `npm run-script eject`
+Moves create-react-app’s configuration files and dev/build/test scripts into you app directory.

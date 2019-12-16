@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run-script server\" \"npm run-script client\"",
+    "install": "cd client && npm install",
     "client": "cd client && npm run-script start",
     "build": "cd client && npm run-script build",
     "test": "cd client && npm run-script test",
-    "eject": "cd client && npm run-script eject",
-    "install-all": "concurrently \"npm install\" \"cd client && npm install\"",
-    "start": "nodemon server/server.js",
-    "prod": "concurrently \"npm run-script build\" \"npm run-script start\""
+    "eject": "cd client && npm run-script eject"
   },
   "author": "",
   "license": "ISC",

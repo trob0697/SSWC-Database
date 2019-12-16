@@ -5,7 +5,6 @@ const express = require('express'),
     db = new sqlite3.Database(path.join(__dirname,'./flowers2019mod.db'));
 
 const app = express();
-app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(bodyParser.json());
 
 /***Querying Begin***/
@@ -80,10 +79,6 @@ app.post('/insert-sighting', (req,res) =>{
     })
 })
 /***Querying End***/
-
-app.get('*', function(req, res){
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server now running on port ${port}!`));
